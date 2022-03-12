@@ -11,7 +11,7 @@
 //     res.end('Hola mundo')
 // }).listen(port)
 
-
+// const mongoose = require('mongoose')
 const express = require('express')
 const app = express()
 const port = 3000
@@ -21,6 +21,9 @@ app.set('view engine', 'pug')
 app.use(express.static('public'))
 
 app.use('/static', express.static('public'))
+
+// mongoose.connect('mongodb://localhost:27017/test')
+
 
 app.get('/', (req, res) => {
    // res.send('Hello Silabuz!')

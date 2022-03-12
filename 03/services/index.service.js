@@ -1,8 +1,8 @@
-const sericeServer = require('./server.service')
+const serviceServer = require('./server.service')
 
 const start = async ()  => {
     try {
-        await sericeServer.initialize()
+        await serviceServer.initialize()
     }catch (err) {
         console.log(`An error has happend: ${err}`)
     }
